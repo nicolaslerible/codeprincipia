@@ -1,5 +1,4 @@
 # codeprincipia
-Videojuego alojado en un sitio web con acceso para usuarios no registrados, usuarios registrados y usuarios administradores
 
 Mi proyecto consiste en el desarrollo de un videojuego tipo “Space Shooter” para el centro de ciencia Principia. Dicho videojuego debe estar alojado en un sitio web que será accesible desde cualquier navegador.
 
@@ -8,8 +7,8 @@ Planteamiento general
 
 Las principales funcionalidades de esta aplicación, a grandes rasgos, son:
 
-●	Mostrar el juego interactivo.
-●	Permitir el registro de usuarios.
-●	Acceso de los usuarios a una página con sus datos de juego.
-●	Mostrar un ranking con las puntuaciones de los usuarios.
-●	Permitir a los administradores gestionar la base de datos.
+-	Mostrar el juego interactivo.
+-	Permitir el registro de usuarios.
+-	Acceso de los usuarios a una página con sus datos de juego.
+-	Mostrar un ranking con las puntuaciones de los usuarios.
+-	Permitir a los administradores gestionar la base de datos.
