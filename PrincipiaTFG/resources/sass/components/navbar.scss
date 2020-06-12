@@ -1,0 +1,136 @@
+$gray: #414a4f;
+$emerald1: #167070;
+$emerald2: #7bb5ae;
+$orange1: #f55f1f;
+$orange2: #ff843c;
+$brown: #4d0000;
+
+.navbar{
+    z-index: 1;
+    position: fixed;
+    background-color: $orange1;
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: $brown;
+    width: 100%;
+}
+.logo svg {
+    transform: rotate(0deg);
+    transition: 200ms;
+}
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: $brown;
+    text-decoration: none;
+    filter: opacity(0.5);
+    transition: 200ms;
+}
+.nav-link:hover {
+    filter: opacity(1);
+    background: $orange2;
+    color: red;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: 200ms;
+}
+
+.fa-primary {
+    color: #5e3d3d;
+}
+
+.fa-secondary {
+    color: $brown;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        margin-top: 6rem;
+        margin-right: 2rem;
+    }
+
+    .navbar {
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    .nav-item:last-child {
+        margin-top: auto;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    main{
+        margin-left: 5rem;
+        padding: 2rem;
+    }
+
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: block;
+    }
+
+    .end {
+        margin-top: 3rem;
+    }
+    
+}

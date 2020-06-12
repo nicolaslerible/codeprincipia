@@ -1,0 +1,31 @@
+@import 'variables';
+
+.table-basic {
+    border-collapse: collapse !important;
+    border: 1px solid rgba(77, 0, 0, 0.5);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-radius: 0.25rem;
+  }
+  
+  .table-basic > thead{
+    background-color: $orange1;
+    color: $brown;
+    font-size: large;
+  }
+  .table-basic > tbody {
+    background-color: #fdeccd;
+  }
+  
+  
+  .table-basic th,
+  .table-basic td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(77, 0, 0, 0.01);
+  }
+  
+  .table-basic thead th {
+    vertical-align: bottom;
+  }

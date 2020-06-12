@@ -1,0 +1,11 @@
+@import '../variables';
+
+.alert {
+    background-color: #00ff9d98;
+    border: 1px solid $emerald1;
+    border-radius: 5px;
+    text-align: center;
+    color: $emerald1;
+    font-weight: bold;
+    padding: 0.3rem;
+}

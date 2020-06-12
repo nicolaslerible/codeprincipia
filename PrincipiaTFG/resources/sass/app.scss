@@ -1,0 +1,97 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+@import 'botones';
+@import 'cartas';
+@import 'formularios';
+@import 'tablas';
+@import 'responsividad';
+
+@import 'components/navbar.scss';
+@import 'components/pagination.scss';
+@import 'components/alert.scss';
+@import 'components/list.scss';
+
+$gray: #414a4f;
+$emerald1: #167070;
+$emerald2: #7bb5ae;
+$orange1: #fe6625;
+$orange2: #fb9334;
+$brown: #4d0000;
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+// SCROLLBAR
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+  background: $brown;
+}
+body::-webkit-scrollbar-thumb{
+  background: $orange2;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $brown;
+  text-align: left;
+  background-color: $emerald2;
+}
+
+.bg-primary {
+  background-color: $orange1 !important;
+}
+.text-primary {
+  color: $orange1 !important;
+}
+.text-dark {
+  color: #4d0000 !important;
+}
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #e3342f;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mr-2{
+  margin-right: 2rem;
+}
+
+canvas{
+  display:block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

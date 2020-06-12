@@ -1,0 +1,112 @@
+@import 'variables';
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.col-form-label {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  padding-right: 1rem;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 0.75rem + 2px);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgb(77, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(77, 0, 0, 0.3);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 100, 52, 0.25);
+  }
+
+  [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: $brown;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $orange1;
+    border-radius: 100%;
+    background: $orange1;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $brown;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+  @media only screen and (max-width: 992px) {
+    .form-group {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .col-form-label {
+      //padding-top: calc(0.375rem + 1px);
+      //padding-bottom: calc(0.375rem + 1px);
+      padding-left: 2rem;
+      //margin-bottom: 0;
+      //font-size: inherit;
+      //line-height: 1.6;
+      text-align: left;
+    }
+    
+}

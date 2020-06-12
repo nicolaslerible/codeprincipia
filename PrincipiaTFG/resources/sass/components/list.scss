@@ -1,0 +1,54 @@
+@import '../variables';
+
+.list {
+    background-color: $orange1;
+    //width: fit-content;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    //max-width: 15rem;
+}
+
+.list-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.list-link,
+.list-end,
+.list-start {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $brown;
+}
+
+.list-active {
+    color: $orange1;
+    background-color: $orange2;
+}
+
+.list-link:hover {
+    background: $orange2;
+    color: $orange1;
+}
+.list-start:hover {
+    background: $orange2;
+    color: $orange1;
+    border-radius: 5px 5px 0px 0px !important;
+}
+.list-end:hover {
+    background: $orange2;
+    color: $orange1;
+    border-radius: 0px 0px 5px 5px;
+}
+

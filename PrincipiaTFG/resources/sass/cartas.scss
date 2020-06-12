@@ -1,0 +1,31 @@
+$gray: #414a4f;
+$emerald1: #167070;
+$emerald2: #7bb5ae;
+$orange1: #fe6625;
+$orange2: #ff843c;
+$brown: #4d0000;
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fdeccd;
+    background-clip: border-box;
+    border: 1px solid rgba(77, 0, 0, 0.5);
+    border-radius: 0.25rem;
+}
+  
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: $orange1 !important;
+    border-bottom: 1px solid rgba(77, 0, 0, 0.125);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}

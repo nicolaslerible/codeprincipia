@@ -1,0 +1,90 @@
+// BASIC
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(220, 100, 52, 0.25);
+}
+
+// PRIMARY
+.btn-primary {
+    color: #4d0000;
+    background-color: #db6300;
+    border-color: #db6300;
+}
+.btn-primary:hover {
+    color: #4d0000;
+    background-color: #ff7300;
+    border-color: #ff7300;
+}
+
+// DARK
+.btn-dark {
+    color: #db6300;
+    background-color: #681500;
+    border-color: #681500;
+    text-decoration: none;
+}
+.btn-dark:hover {
+    color: #ff7300;
+    background-color: #7e1900;
+    border-color: #7e1900;
+}
+  
+// YELLOW
+.btn-yellow {
+    color: #db6300;
+    font-weight: bold;
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+    text-decoration: none;
+}
+.btn-yellow:hover {
+    color: #ff7300;
+    background-color: #ffd000;
+    border-color: #ffd000;
+}
+
+// RED
+.btn-red {
+    color: #ff7300;
+    font-weight: bold;
+    background-color: #c51700;
+    border-color: #c51700;
+}
+.btn-red:hover {
+    color: #ff7300;
+    background-color: #e91b00;
+    border-color: #e91b00;
+}
+
+// LINK
+.btn-link {
+    font-weight: 400;
+    color: #db6300;
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: #db6300;
+    text-decoration: underline;
+}
+.btn-link:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 100, 52, 0.01);
+}
